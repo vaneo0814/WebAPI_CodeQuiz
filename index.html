@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>The Dundies</title>
+</head>
+
+<body>
+    <div id="timer"></div>
+
+    <section id="scores">
+        <a href="highScores.html" class="viewHighScores">View High Scores</a>
+    </section>
+
+    <div id="homepage">
+        <h1>How well do you know Michael Scott?</h1>
+        <p>Try to choose the correct answer that relates to Dunder Mifflins best boss
+            within the 30 second time limit.<br>(Heads up: Incorrect answers will
+            penalize your score time by 2 seconds.)<br><strong>Click play on the mp3 if you so choose, to listen to the
+                infamous
+                theme song.</strong> Good luck!
+        </p>
+        <img src="https://api.time.com/wp-content/uploads/2019/06/the-office.jpg" alt="michael_scott" width=470px
+            height="350px" />
+        <button id="button" type="button">Start Quiz</button>
+    </div>
+    <!--soundtrack-->
+    <iframe class="mp3" frameBorder="0"
+        src="http://www.moviesoundclips.net/embed.php?id=1b8d395c03f9bc069964fce7331dc73a"
+        style="overflow-y: hidden;border:0px;" scrolling="no" seamless="seamless"></iframe>
+
+    <div id="question"></div>
+
+    <ul id="option-list"></ul>
+
+    <div id="question-result"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
