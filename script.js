@@ -95,7 +95,7 @@ function checkAnswer(event) {
     } else
       questionResultEl.textContent = "Wrong";
     time -= 2;
-    if (correctCount <= 0) {
+    if (correctCount <= -1) {
       correctCount--;
     }
 
