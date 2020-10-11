@@ -97,11 +97,9 @@ function checkAnswer(event) {
     time -= 2;
     if (correctCount <= -1) {
       correctCount--;
-    }
-
-
   }
-  setTimeout(nextQuestion, 1000); //after 2 seconds it will execute next question
+  setTimeout(nextQuestion, 150);
+}
 }
 
 function nextQuestion() {
@@ -132,7 +130,6 @@ function saveHighScore() {
   alert("Hope you had fun " + name + "!");
   window.location.href = "highScores.html";
 
-
   var high_score = JSON.parse(localStorage.getItem("high_score")) || [];
 
   var user = {
@@ -148,3 +145,4 @@ function saveHighScore() {
 
 optionListEl.addEventListener("click", checkAnswer);
 startButton.addEventListener("click", startQuiz);
+

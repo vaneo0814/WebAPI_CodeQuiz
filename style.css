@@ -46,7 +46,7 @@ li:nth-child( odd ) {
 }
 
 #question-result {
-    font-size: 30px;
+    font-size: 55px;
     padding-left: 45px;
     color: purple;
 }
